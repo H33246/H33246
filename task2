@@ -1,0 +1,26 @@
+
+def Convert(string):
+    list1=[]
+    list1[:0]=string
+    return list1
+
+
+def listToString(s): 
+ 
+    str1 = " " 
+
+    return (str1.join(s))
+        
+
+class StringOperations:
+    def reverse(to_be_reversed: str = None):
+        rstr = Convert(to_be_reversed)
+        rstr.reverse()
+        listToString(rstr)
+        return rstr
+        raise NotImplemented('This method need to be implemented')
+
+
+class ReversedString(StringOperations):
+    x = "haider"
+    print(StringOperations.reverse(x))
